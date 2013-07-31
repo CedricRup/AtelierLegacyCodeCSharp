@@ -1,0 +1,27 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Creation</title>
+    </head>
+    <body>
+        <div>
+            @using(Html.BeginForm("Create","Formation",FormMethod.Post))
+            {
+               <fieldset>
+                Diplome @Html.TextBox("Diplome")<br/>
+                Lieu @Html.TextBox("Lieu")<br/>
+                   Niveau @Html.DropDownList("Niveau",Enumerable.Range(1,5).Select(r=>new SelectListItem{Value = r.ToString(),Text = r.ToString()}))<br/>
+                   <input type="submit"/>
+                
+               </fieldset> 
+            }
+        </div>
+    </body>
+</html>
