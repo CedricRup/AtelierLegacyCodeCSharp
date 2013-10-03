@@ -8,7 +8,7 @@ using Framework;
 
 namespace MvcApplication.Controllers
 {
-    public class FormationController : Controller
+    public class FormationsController : Controller
     {
         //
         // GET: /Formation/
