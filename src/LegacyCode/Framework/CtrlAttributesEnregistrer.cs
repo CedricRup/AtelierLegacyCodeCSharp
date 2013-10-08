@@ -8,17 +8,17 @@ namespace Framework
     public class CtrlAttributesEnregistrer : ControllerBaseAttributes
     {
 
-        public long param_f_niveau_formation;
+        public long? param_f_niveau_formation;
 
-        public long param_f_formation1_frmid = 0L;
+        public long? param_f_formation1_frmid;
 
-        public int param_f_formation1_date_debut_mois;
+        public int? param_f_formation1_date_debut_mois;
 
-        public int param_f_formation1_date_debut_annee;
+        public int? param_f_formation1_date_debut_annee;
 
-        public int param_f_formation1_date_fin_mois;
+        public int? param_f_formation1_date_fin_mois;
 
-        public int param_f_formation1_date_fin_annee;
+        public int? param_f_formation1_date_fin_annee;
 
         public string param_f_formation1_etablissement;
 
@@ -26,11 +26,11 @@ namespace Framework
 
         public string param_f_formation1_diplome;
 
-        public byte param_f_formation1_obtenu;
+        public byte? param_f_formation1_obtenu;
 
         public string param_f_formation1_specialisation;
 
-        public long param_f_formation1_tfo_code;
+        public long? param_f_formation1_tfo_code;
 
         //Type : continue ou scolaire
         public string param_f_formation1_type;
