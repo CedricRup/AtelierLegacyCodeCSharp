@@ -31,10 +31,5 @@ namespace Framework
         public string param_f_formation1_specialisation;
 
         public long? param_f_formation1_tfo_code;
-
-        //Type : continue ou scolaire
-        public string param_f_formation1_type;
-
-        public string param_f_formation1_nom_formation_continue;
     }
 }
