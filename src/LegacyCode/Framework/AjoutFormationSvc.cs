@@ -12,7 +12,8 @@ namespace Framework
             Internaute internaute = scc.Internaute;
             CV cv = new CV();
             // On r�cup�re le Pourcentage d'origine
-            cv = CVFactory.GetTableauBord(internaute.IntId);
+            CVFactory cvFactory = new CVFactory();
+            cv = cvFactory.GetTableauBord(internaute.IntId);
             // On cr� un nouveau pour la mise � jour
             cv = new CV();
             cv.IntId = internaute.IntId;
@@ -75,7 +76,7 @@ namespace Framework
                 pourcent = pourcent + 5;
             }
             cv.SetCuvPourcentFormation(pourcent);
-            CVFactory.InsertFormation(cv);
+            cvFactory.InsertFormation(cv);
         }
 
         private int FormatAndSetFormationDate(CtrlAttributesEnregistrer attEnregistrer, Formation formation1, int param_renseign) {
